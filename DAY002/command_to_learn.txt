@@ -36,9 +36,17 @@ netstat - network
   ss -talpn
 route - network
 ip - network
+  ip addr - get current network settings
+  ifconfig - get current network settings
 df - disk space usage
 cat - concatenate
+expr - arithmetic operations
+chmod - change mode
+chown - change owner
+echo - print message
+  echo $? - errorcode
 head - show first 10 lines
+clear - clear screen
 tail - show last 10 lines
 grep - print lines that match patterns
 find - find files
@@ -46,7 +54,7 @@ awk - pattern scanning and processing language
 tr - translate or delete characterstr 
 sed - stream editor for filtering and transforming text
 sort - sort
-sort -r - reverse sort
+  sort -r - reverse sort
 uniq - show only uniq strings
 wc - counter
 w(ho) - who is connected
