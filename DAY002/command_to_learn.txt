@@ -1,0 +1,68 @@
+Commands to learn
+
+pwd
+
+cd ~
+cd
+cd ..
+cd /
+cd foldername
+cd /folder1/folder2
+cd "folder with spaces in name"
+cd Folder\ with \space
+
+ls
+ls -l
+ls -a
+ls -la
+ls -lh
+ls -laR
+
+touch 
+
+mkdir
+
+rm
+
+rmdir
+
+cp
+
+mv
+
+cat
+
+head
+
+tail
+
+| pipes (konveyer)
+
+grep
+
+find
+
+awk
+
+tr
+
+sed
+
+sort
+
+uniq
+
+wc
+
+w(ho)
+
+ps
+
+netstat
+
+vi
+
+env
+
+apt-get
+
