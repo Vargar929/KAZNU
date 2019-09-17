@@ -1,68 +1,62 @@
-Commands to learn
+pwd - показать текущее местоположение
 
-pwd
-
-cd ~
-cd
-cd ..
-cd /
-cd foldername
-cd /folder1/folder2
-cd "folder with spaces in name"
-cd Folder\ with \space
-
-ls
-ls -l
-ls -a
-ls -la
-ls -lh
-ls -laR
-
-touch 
-
-mkdir
-
-rm
-
-rmdir
-
-cp
-
-mv
-
-cat
-
-head
-
-tail
-
+cd - change directory
+  cd ~
+  cd
+  cd ..
+  cd /
+  cd foldername
+  cd /folder1/folder2
+  cd "folder with spaces in name"
+  cd Folder\ with \space
+ls - list directory contents
+  ls -l
+  ls -a  
+  ls -la
+  ls -lh
+  ls -laR
+touch - change timestamp. Но часто используется для создания файлов
+id - print real and effective user and group IDs
+mkdir - make directory
+rm - remove files or directories
+  rm -r - recursively
+  rm -f - force
+rmdir - remove empty directories
+cp - copy 
+mv - move
+cmp of diff - compare files
+ps - processes
+  ps -aux
+  ps -auxf
+kill - stop process
+  kill 0 - kill all except shell
+  kill -9 PID - process name
+netstat - network
+  netstat -tulpn
+  ss -talpn
+route - network
+ip - network
+df - disk space usage
+cat - concatenate
+head - show first 10 lines
+tail - show last 10 lines
+grep - print lines that match patterns
+find - find files
+awk - pattern scanning and processing language
+tr - translate or delete characterstr 
+sed - stream editor for filtering and transforming text
+sort - sort
+sort -r - reverse sort
+uniq - show only uniq strings
+wc - counter
+w(ho) - who is connected
+vi - editor
+env - show environment variables
+apt-get - install software
+=============================
 | pipes (konveyer)
-
-grep
-
-find
-
-awk
-
-tr
-
-sed
-
-sort
-
-uniq
-
-wc
-
-w(ho)
-
-ps
-
-netstat
-
-vi
-
-env
-
-apt-get
-
+>
+>>
+command > out 2>error
+command > out 2>&1
+command &> filename
