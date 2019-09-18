@@ -24,13 +24,15 @@ rm - remove files or directories
 rmdir - remove empty directories
 cp - copy 
 mv - move
-cmp of diff - compare files
 ps - processes
   ps -aux
   ps -auxf
 kill - stop process
   kill 0 - kill all except shell
   kill -9 PID - process name
+
+-- Вот отсюда ---------------------------------------
+cmp of diff - compare files
 netstat - network
   netstat -tulpn
   ss -talpn
