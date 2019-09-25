@@ -1,0 +1,71 @@
+cmp of diff - compare files
+ip - network
+  ip addr - get current network settings
+  ifconfig - get current network settings
+cat - concatenate
+echo - print message
+  echo $? - errorcode
+---------------------------------
+head - show first 10 lines. Вывод первых 10 строк
+---------------------------------
+tail - show last 10 lines. Вывод последних 10 строк
+tail -f - постоянный вывод данных. Например вывод log  файла веб сервера. 
+---------------------------------
+grep - print lines that match patterns
+grep 'eminem' darkweb2017-top10000.txt
+
+---------------------------------
+awk - pattern scanning and processing language
+awk -F' ' '{print $1" some text "$2}' java.log
+-F - field separator, разделитель
+---------------------------------
+tr - translate or delete characters
+tr -d '\n'
+tr -d '\r\n'
+tr -s '\r\n' ' '
+
+Windows
+Expects a newline to be combination of two characters, '\r\n'.
+
+Linux\Unix and Modern Mac OS
+Uses a single '\n' for a new line.
+
+Classic Mac OS
+Uses a single '\r' for a new line.
+---------------------------------
+sort - sort
+  sort -r - reverse sort
+---------------------------------
+uniq - show only uniq strings
+---------------------------------
+wc - counter
+---------------------------------
+vi - редактор
+переключение между режимами клавиша Insert (Insert, Replace)
+переход в командный режим Esc
+:q - выход
+:w - запист
+:q! - выход без сохранения
+:wq - запись и выход
+---------------------------------
+| pipes
+cat java.log | head -100 | sort | uniq  | grep "Eden" | awk -F'-' '{print $1" - "$2}' 
+---------------------------------
+> - вывод в файл
+>> - добавление в файл 
+---------------------------------
+command > filename 2>error
+> filename - стандартный вывод в файл filename
+2> error - ошибки в файл error
+
+command > filename 2>&1
+> filename - стандартный вывод в файл filename 
+2>&1 - ошибки в стандартный вывод
+
+command &> filename
+&> filename стандартный вывод и ошибки в файл filename
+
+mkdir /root > result.txt
+mkdir /root > result.txt 2> error.txt
+mkdir /root > result.txt 2>&1 
+mkdir /root &> result.txt
