@@ -23,6 +23,9 @@ Telegram:
 @get_kontakt_bot
 @getfb_bot
 
+https://receive-smss.com/
+https://sms-reg.com/
+
 https://www.fakepersongenerator.com/
 https://www.fakenamegenerator.com/
 https://thispersondoesnotexist.com/
