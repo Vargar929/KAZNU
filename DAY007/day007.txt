@@ -1,2 +1,5 @@
-Wireshark/tcpdump
-OSINT
+*Wireshark/tcpdump
+Знакомство с инструментами. 
+
+*OSINT
+https://www.exploit-db.com/google-hacking-database
