@@ -1,0 +1,41 @@
+Посмотреть доступные беспроводные адаптеры:
+iwconfig
+
+Перевести адаптер в режим монитора:
+airmon-ng start wlan0 
+
+Поиск доступных WiFi сетей, AP на чипе Ralink, наличие WPS:
+wash -i wlan0mon
+
+Wifite2 *
+git clone https://github.com/derv82/wifite2
+./wifite2 --kill
+
+Конвертация дампа CAP -> HCCAPX:
+https://hashcat.net/cap2hccapx/
+
+Запуск hashcat:
+hashcat64 -a 0 -m 2500 15868_1579761253.hccapx custom.password.file.txt
+
+Aircrack-ng:
+aircrack-ng -w common_roots.txt dump.cap
+
+* Дополнительные инструменты для Wifite2
+apt install hcxdumptool -y
+sudo apt-get install libssl-dev -y
+sudo apt-get install openssl -y
+sudo apt-get install zlib1g-dev -y
+sudo apt-get install libpcap-dev -y
+sudo apt-get install curl -y
+sudo apt-get install libcurl4 -y
+wget https://curl.haxx.se/download/curl-7.63.0.tar.gz
+tar -xvzf curl-7.63.0.tar.gz
+cd curl-7.63.0
+./configure
+make
+make install
+git clone https://github.com/ZerBea/hcxtools.git
+cd hcxtools
+make
+make install
+systemctl stop NetworkManager
